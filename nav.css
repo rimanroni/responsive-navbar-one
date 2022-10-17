@@ -1,0 +1,38 @@
+/*  responsive navbar  */
+
+@media only screen and (max-width:940px){
+    nav ul{
+        position: fixed;
+        background-color: gainsboro;
+        top: 80px;
+        height: 241px;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px    !important;
+        left: -100%;
+        transition: 1s ease;
+    }
+    nav ul li{
+         margin: 10px 0px;
+         position: relative;
+         left: 49px;
+    }
+    nav ul li a{
+     font-size: 20px;
+    }
+    nav ul li a:hover{
+     background: none ;
+    }
+ nav ul li a.active{
+     background: none;
+ }
+ .menu-btn{
+     display: block;
+  }
+ #click:checked ~.menu-btn i::before{
+     content: " \f00d";
+ }
+  #click:checked ~ ul{
+     left: 0%;
+  }
+}
